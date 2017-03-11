@@ -13,7 +13,7 @@ public:
             ++pivot;
         if (pivot == rlast)
             reverse(rfirst, rlast);
-        auto change = find_if(rfirst, rlast, bind1st(less<int>(), *pivot));
+        auto change = find_if(rfirst, pivot, bind1st(less<int>(), *pivot));
         swap(*pivot, *change);
         reverse(rfirst, pivot);
     }
