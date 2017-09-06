@@ -10,7 +10,7 @@
 > Paste: You can paste the characters which are copied last time.
 > Given a number n. You have to get exactly n 'A' on the notepad by performing the minimum number of steps permitted. Output the minimum number of steps to get n 'A'.
 
-思路是$dp[n] = min_i dp[n/i]+i\ if\ i | n$
+思路是 dp[n] = min_i dp[n/i]+i if i | n
 但是讨论区里面有个答案是最小的整除的i就是最优的
 解释是
 - It take 2 op to double, 3 ops to triple
