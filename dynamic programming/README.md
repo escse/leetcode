@@ -41,7 +41,14 @@ for (int i = 0; i < n; ++i) {
 ### 646. Maximum Length of Pair Chain
 
 > You are given n pairs of numbers. In every pair, the first number is always smaller than the second number.
+>
 > Now, we define a pair (c, d) can follow another pair (a, b) if and only if b < c. Chain of pairs can be formed in this fashion.
+>
 > Given a set of pairs, find the length longest chain which can be formed. You needn't use up all the given pairs. You can select pairs in any order.
 
 这题用贪心法，类比任务规划问题，完成最先结束的任务，也就是找(a, b)pair中b最小的， 超过了92%
+
+### 639. Decode Ways II
+
+这题把复杂的判断都先计算出来放在矩阵里了，核心的循环就变得非常简单
+
