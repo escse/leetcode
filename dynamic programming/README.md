@@ -52,3 +52,59 @@ for (int i = 0; i < n; ++i) {
 
 这题把复杂的判断都先计算出来放在矩阵里了，核心的循环就变得非常简单
 
+
+### 629. K Inverse Pairs Array
+
+
+ 
+### 600. Non-negative Integers without Consecutive Ones
+
+### 494. Target Sum
+trick:int dp[s + 1] = { 0 };
+
+discuss里面写的很好的一种方法
+
+```
+class Solution {
+public:
+    int findTargetSumWays(vector<int>& nums, int s) {
+        int sum = accumulate(nums.begin(), nums.end(), 0);
+        return sum < s || (s + sum) & 1 ? 0 : subsetSum(nums, (s + sum) >> 1); 
+    }   
+
+    int subsetSum(vector<int>& nums, int s) {
+        int dp[s + 1] = { 0 };
+        dp[0] = 1;
+        for (int n : nums)
+            for (int i = s; i >= n; i--)
+                dp[i] += dp[i - n];
+        return dp[s];
+    }
+};
+```
+
+### 354. Russian Doll Envelopes
+类似于最长上升子序列nlgn的做法
+
+dp[i] 表述长度为i+1的自序列末尾最小值
+
+*lower_bound(dp, dp+size, envelopes[i].second) = envelopes[i].second;
+
+### 413. Arithmetic Slices
+
+### 446. Arithmetic Slices II - Subsequence
+
+
+### 322. Coin Change
+不是自己写的
+
+### 300. Longest Increasing Subsequence
+
+
+### 85. Maximal Rectangle
+Largest Rectangle in Histogram 扩展
+
+### 303. Range Sum Query - Immutable
+easy 题
+
+### 689. Maximum Sum of 3 Non-Overlapping Subarrays
