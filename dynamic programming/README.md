@@ -108,3 +108,12 @@ Largest Rectangle in Histogram 扩展
 easy 题
 
 ### 689. Maximum Sum of 3 Non-Overlapping Subarrays
+
+### 673. Number of Longest Increasing Subsequence
+
+### 691. Stickers to Spell Word
+BFS做直观，但是容易超内存
+A 90%， dp的解法没看
+
+### 688. Knight Probability in Chessboard
+速度很慢
