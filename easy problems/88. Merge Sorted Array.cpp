@@ -1,20 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <set>
-#include <map>
-#include <numeric>
-// #include <bits/stdc++.h>
-
-using namespace std;
-template<typename T>
-void print(const T& t) {
-    using type = typename T::value_type;
-    for_each(t.begin(), t.end(), [](const type& e){std::cout << e << " ";});
-    std::cout << std::endl;
-}
-
-#define it(v) v.begin(),v.end()
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -39,12 +22,3 @@ public:
         
     }
 };
-
-int main(int argc, const char *argv[]) {
-    vector<int> n1{1,3,5,7};
-    n1.resize(8);
-    vector<int> n2{2,4,6,8};
-    Solution().merge(n1,4, n2, 4);
-    print(n1);  
-    return 0;
-}
