@@ -29,4 +29,4 @@ class Solution(object):
         for i in self.employees[id-1].subordinates:
             self.getIds(i)
 
-print Solution().getImportance([[1,2,[2]], [2,3,[]]], 2)???
+print Solution().getImportance([[1,2,[2]], [2,3,[]]], 2)
