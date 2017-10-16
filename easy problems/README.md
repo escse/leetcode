@@ -1,4 +1,4 @@
-192 (91 finished + 72 unfinished + 13 other + 26 lock)
+192 (100 finished + 64 unfinished + 13 other + 26 lock)
 
 459 解法神奇 
 
@@ -13,3 +13,9 @@
 345 -2% ...
 
 400 Nth digit 还是挺复杂的
+
+500 用了regex 
+???
+r = re.compile('[0-9]*')
+string_list = ['123', 'a', '467','a2_2','322','21']
+filter(r.match, string_list)
