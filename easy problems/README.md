@@ -1,4 +1,4 @@
-192 (100 finished + 64 unfinished + 13 other + 26 lock)
+192 (105 finished + 59 unfinished + 13 other + 26 lock)
 
 459 解法神奇 
 
@@ -19,3 +19,9 @@
 r = re.compile('[0-9]*')
 string_list = ['123', 'a', '467','a2_2','322','21']
 filter(r.match, string_list)
+
+234 Palindrome Linked List
+使用函数调用栈来存数据，很巧妙！！！
+
+257. Binary Tree Paths
+不错
